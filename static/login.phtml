@@ -1,0 +1,65 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+<html>
+<!DOCTYPE html > 
+<head><title><?php print('Login | Booksmore - Online Book Store & Library, India') ?></title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="styles/loginstyler.css.gz"/>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/default.js.gz"></script>
+</head>
+<body>
+<noscript><div class="jserror">Sorry ! JAVASCRIPT is turned OFF ! tis page has not yet been configured to use without javascript. :(</div></noscript>
+<header>
+	<nav>
+		<a href="http://localhost/booksmore.in/default.php" class="logo">booksmore</a>
+		<div class="n2">
+			<ul class="n3">
+			<li id="sto" class="a2 d2"><a href="http://localhost/booksmore.in/default.php"> Store </a></li>
+			<li id="lib" class="d2" ><a href="http://localhost/booksmore.in/library.php">Library </a></li>
+			<li class="n5">
+				<ul class="n6">
+				<form action="actions.php" method="get">
+				<li><input type="text" name="search" class="i2" ajaxify="search" placeholder="Search Book Name, ISBN, Author" /></li>
+				<li><input type="submit" class="s2" value=" "/></form></li>
+				</ul></li>
+			</ul>
+			</div>
+		</nav>
+	<div class="ui">
+		<ul class="ub">
+			<li><label class="tx2">Call us <b>0532-2234432 |</b> </label></li>
+			<li><label class="tx2"><b>Help |</b> </label></li>
+		<?php
+			@session_start( );
+			if(!isset($_SESSION['count']))
+			$_SESSION['count']=0;
+			if(!isset($_SESSION['username']))
+			echo '<li><button id="cart" class="cart" name="cart"><div id="counter" class="counter">'.$_SESSION['count'].'</div></button></li>';
+			if(isset($_SESSION['username'])){
+				echo '<li><button id="user" class="user" name="setting"><img src="images/no_pic.gif" /></button></li>';
+			}
+			
+		?>
+		</ul>
+		<div class="cartbox">
+			<div>	<form action="checkout.php" method="post">
+				<h3>Shopping Cart</h3>
+				<div class="carthead">
+					<ul>
+					<li class="cm st" >Book</li>
+					<li class="cm sc">Quantity </li>
+					<li class="cm sc">Price</li>
+					</ul>
+					</div>
+				<div class="cartbox2">
+				<div class="cartcontent">
+					<?php 	require_once("support/functions_c.php");
+						 show_cart( ) ?>
+					</div>
+				</div>
+				
+				</div>
+			</div>
+			</div>
+		</div>
+</header>

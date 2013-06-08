@@ -1,0 +1,97 @@
+<?php header("Content-Type:text/html;charset=utf-8");
+header("Expires:Sat 17 November 2012 05:30:00 GMT");?>
+<!DOCTYPE html > 
+<html>
+<head><title><?php print('Booksmore - Online Book Store & Library, India') ?></title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link media="screen" rel="stylesheet" href="styles/styler.css"/>
+<link rel="stylesheet" href="styles/scrollstyler.css"/>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+</head>
+<body>
+<noscript><div id="jserror">Sorry ! JAVASCRIPT is turned OFF ! this page has not yet been configured to use without javascript. :(</div></noscript>
+<header>
+	<nav>
+		<a href="http://localhost/booksmore.in/default.php" class="logo">booksmore</a>
+		<div class="n2">
+			<ul class="n3">
+			<li id="sto" class="a2 d2"><a href="http://localhost/booksmore.in/default.php"> Store </a></li>
+			<li id="lib" class="d2" ><a href="http://localhost/booksmore.in/library.php">Library </a></li>
+			<li class="n5">
+				<ul class="n6">
+				<form action="actions.php" method="get">
+				<li><input type="text" name="search" class="i2" ajaxify="search" placeholder="Search Book Name, ISBN, Author" /></li>
+				<li><input type="submit" class="s2" value=" "/></form></li>
+				</ul></li>
+			</ul>
+			</div>
+		</nav>
+	<div class="ui">
+		<ul class="ub">
+			<li><label class="tx2">Call us <b>0532-2234432 |</b></label></li>
+			<li><label class="tx2"><b>Help |</b> </label></li>
+		<?php
+			@ session_start( );
+			if(!isset($_SESSION['count']))
+			$_SESSION['count']=0;
+			if(!isset($_SESSION['username']))
+			echo '<li><b><input type="button" id="login" class="tx2 login" name="login" value="Sign In" /></b></li>';
+			echo '<li><button id="cart" class="cart" name="cart"><div id="counter" class="counter">'.$_SESSION['count'].'</div></button></li>';
+			if(isset($_SESSION['username'])){
+				echo '<li><button id="user" class="user" name="setting"><img src="images/no_pic.gif" /></button></li>';
+				echo '<style type="text/css"> .cartbox { margin-right:44px; }</style>';
+			}
+			
+		?>
+		</ul>
+		<section class="cartbox">
+				<h3>Shopping Cart</h3>
+				<div class="carthead">
+					<ul>
+					<li class="ch st" >Book</li>
+					<li class="ch sc">Quantity </li>
+					<li class="ch sc">Price</li>
+					</ul>
+					</div>
+				<div class="cartbox2">
+					<div class="cartcontent">
+						<?php 	require_once("support/functions_c.php");
+							 show_cart( ) ?>
+						</div>
+					</div>
+			</section>
+		<section class="loginbox">
+			<form action="login.php" method="post">
+			<ul>
+			<li><label for="username" >Username</label><input type="text" name="username" placeholder="username" title="Enter your username." required/></li>
+			<li><label for="password" >Password</label><input type="password" name="password" placeholder="password" title="Enter your username." required/></li>
+			<li><label for="persistent" >Remember Me</label><input type="checkbox" name="persistent" title="Check if you trust this computer or mobile."/></li>
+			<li><input type="submit" value="Sign In" class="sb lb" /></li>
+			</ul>
+			</form>
+		</section>
+		<section class="userpanel"> 
+                     			 <div class="accountbox">
+                     			 <?php
+                        			echo"<p>";
+                        				echo"<img src=\"images/no_pic.gif\">";
+                        				echo"<label class=\"label_u\">Hi, ".@$_SESSION['username']."</label>";
+                        				echo"<label></label>";
+                        			echo"</p>";
+                        		?>
+                       			 </div>
+                       		 	<ul>
+                        	           <li><input type="submit" id="report" value="Change Shipping Address" /> </li>
+                        	           <form method="post" action="logout.php">
+                       		            <input type="hidden" name="action" value="logout" />
+                       		           <li><input type="submit" value="Sign Out" /></li>
+                        	           </form> 
+                        	           <li><input type="submit" id="report" value="Report" /> </li>
+                        	          <li><input type="submit" class="settings" value="Other Settings" /></li> 
+                        	          </ul>
+		</section>
+</header>
+<div class="sr2">
+	<form action="actions.php" method="get">
+		<input type="search" name="search" class="input2" ajaxify="search" placeholder="Search Book Name, ISBN, Author" />
+		<button type="submit" class="search"></button></form></div>

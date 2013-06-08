@@ -1,0 +1,386 @@
+form{
+    display:inline-block;
+}
+
+.userpanel{
+    margin-top:16px;
+    padding:20px;
+    text-align:center;
+}
+
+.userpanel input[type="text"], [type="password"], input[type="checkbox"] {
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 2px rgb(242, 242, 242) inset;
+    font-size: 14px;
+    height: 34px;
+    margin: 0 2px 8px 24px;
+    padding:8px;
+    width:240px;
+}
+.userpanel input[type="submit"] {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid rgba(120, 120, 120, 0.2);
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 1.5px rgb(195, 195, 195);
+    color:#272727;
+    cursor: pointer;
+    font-family: roboto;
+    font-size: 12px;
+    width:60px;
+    height:28px;
+    margin-top:6px;
+    margin-left: -84px;
+    text-align: center;
+}
+.userpanel input[type="checkbox"] {
+    left:-20px;
+    height:0;
+    top:2px;
+    width:0px;
+    position:relative;
+    margin:0 24px;
+}
+.userpanel label {
+    color: red;
+    display: inline-block;
+    font-family: roboto;
+    font-size: 14px;
+    margin: 0 0px;
+    padding: 4px;
+    text-shadow: none;
+}
+.userpanel li {
+    width:360px;
+    list-style:none;
+}
+body {
+    background: none repeat scroll 0 center rgb(204, 204, 250);
+    min-width: 1024px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, section, aside {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+}
+
+.panel {
+    background: none repeat scroll 0 0 whitesmoke;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    height: 272px;
+    padding: 4px;
+    width:500px;
+    margin:40px auto 160px;
+}
+
+
+.panel_e {
+    background: none repeat scroll 0 0 rgb(252, 252, 252);
+    box-shadow: 0 0 3px red;
+    color: red;
+    font-family: roboto;
+    font-size: 14px;
+    height: 24px;
+    margin: 80px auto 40px;
+    padding: 24px 4px;
+    text-align: center;
+}
+
+header {
+    background: none repeat scroll 0 0 rgb(64, 150, 238);
+    box-shadow: 0 0 3px grey;
+    height: 34px;
+    padding: 4px 1%;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 5;
+}
+
+nav {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
+nav a{
+        color: white;
+        text-shadow: 0 0 1.5px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    display: inline;
+    float: left;
+    font: bold 28px marmelad;
+    height: 32px;
+    letter-spacing: -2px;
+    margin-top: 6px;
+    width: 152px;
+    transition: all 1s linear;
+    -webkit-transition: all 0.3s linear;
+
+}
+
+.logo:hover {
+    text-shadow: 0px 0px 2px rgba(255,255,255,.2);
+    -webkit-transition: all 0.3s linear;
+}
+
+.a2 {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.d2{
+    width:80px;
+}
+
+.n2{
+    display:inline-block;
+    position:relative;
+    top:-16px;
+}
+.n3 li {
+    display: inline-block;
+    padding: 12px 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.n3 {
+    display: inline-block;
+    font:bold 14px roboto;
+}
+
+.i2 {
+    border: 1px solid blue;
+    border-radius: 4px 0px 0px 4px;
+    display: inline;
+    height: 30px;
+    padding: 0 8px;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    width: 280px;
+}
+.i2:focus {
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    width: 360px;
+}
+
+.n5{
+    margin-left:16px; 
+}
+
+.n5,.n6{
+    height:40px
+}
+.s2{
+    height:32px;
+    width:28px;
+    border:1px solid;
+    border-color:blue blue blue #c3c3c3;
+    margin:0px -8px;
+    background:url("../images/7.png") no-repeat center,white;
+    border-radius:0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+.ui {
+    display: inline-block;
+    float: right;
+    height: 32px;
+    position: relative;
+    right: 10px;
+}
+.ub li {
+    display: inline-block;
+    margin-top: -9px;
+}
+.login {
+    background: none repeat scroll 0 0 transparent;
+}
+.tx2{
+    border-radius: 3px;
+    cursor: pointer;
+    border: medium none;
+    color: rgb(245, 245, 245);
+    display: inline-block;
+    font:bold 12px tahoma;
+    position: relative;
+    text-shadow: none;
+    top: -12px;
+}
+.cart {
+    background: url("../images/cart.png") no-repeat scroll 0 7px transparent;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 42px;
+    width: 46px;
+    padding-right: 5px;
+}
+
+.counter {
+    background: none repeat scroll 0 0 white;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: none;
+    color: red;
+    cursor: pointer;
+    display: inline;
+    float: right;
+    font: bold 13px roboto;
+    margin-right: -2px;
+    padding: 2px;
+    position: relative;
+    text-align: center;
+    top: -5px;
+    width: 16px;
+}
+
+.st {
+    width: 197px;
+}
+.sc {
+    width: 64px;
+}
+.cartcontent .sc {
+    width: 65px;
+}
+
+.carthead {
+    background: none repeat scroll 0 0 rgba(240, 70, 0, 0.9);
+    color: rgb(250, 250, 250);
+    font: bold 15px roboto;
+}
+
+.cartbox h3 {
+    color: rgb(255, 0, 51);
+    font-family: roboto;
+    font-size: 15px;
+    padding: 8px;
+    height:20px;
+    box-shadow:0px 1px 1.5px #c3c3c3;
+}
+.cartcontent {
+    background: none repeat scroll 0 0 rgb(254, 254, 241);
+    font: 13px roboto;
+}
+.cartfoot {
+    background: none repeat scroll 0 0 rgba(120, 210, 200, 0.2);
+    color: rgb(67, 67, 67);
+    font: bold 15px roboto;
+}
+.ch, .cm, .cf {
+    display: inline-block;
+    padding: 8px 4px;
+    text-align: center;
+}
+.ch:last-child, .cm:last-child, .cf:last-child {
+    border-right: medium none;
+}
+.cf {
+    height: 22px;
+}
+
+.cme{
+    color: #434343;
+    text-align: center;
+    font: 14px roboto;
+    padding: 12px;
+}
+.cb {
+    border: 1px solid rgba(120, 120, 120, 0.3);
+    float: right;
+    height: 36px;
+    margin: 10px 0;
+    text-align: center;
+    width: 80px;
+}
+.sb {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid;
+    border-color: rgba(120, 120, 120, 0.3)  rgba(120, 120, 120, 0.3)  rgba(120, 120, 120, 0.4)  rgba(120, 120, 120, 0.4);
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 1.2px #c1c1c1;
+    color: rgb(67, 67, 67);
+    cursor: pointer;
+    text-align: center;
+    margin-right:8px;
+}
+.lb {
+    height: 28px;
+    margin: 10px 24px;
+    width: 60px;
+}
+
+.cartbox {
+    right:0;
+    width: 360px;
+}
+
+.cartbox {
+    background: none repeat scroll 0 0 rgb(250, 250, 250);
+    box-shadow: 0 1px 5px 1px rgba(0,0,0,.2);
+    display: none;
+    position: absolute;
+}
+.cartbox:before {
+    border-color: rgb(250, 250, 250) transparent;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: -8px;
+    width: 0;
+}
+footer {
+    background: none repeat scroll 0 0 rgb(64, 150, 238);
+    box-shadow: 0 0 4px rgb(173, 173, 173);
+    position: relative;
+    width: 100%;
+}
+
+.f3 {
+    color: rgb(250, 250, 250);
+    display: inline;
+    float: left;
+    margin: 16px;
+}
+.f5 {
+    margin-top: 8px;
+}
+
+.f3{
+    font:bold 14px tahoma;
+}
+
+.f5 li {
+    display: block;
+    float: none;
+    font:normal 12.5px tahoma;
+    margin: 0;
+}
+.f6 {
+    background: none repeat scroll 0 0 rgb(0, 4, 4);
+    box-shadow: 0 1px 3px rgb(32, 32, 32);
+    clear: both;
+    color: rgb(244, 244, 244);
+    font-family: helvetica;
+    font-size: 12px;
+    padding: 12px;
+    position: relative;
+}
+
+.fb2 {
+    cursor: pointer;
+    float: right;
+    width: 110px;
+}
+

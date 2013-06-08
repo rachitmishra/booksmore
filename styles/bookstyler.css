@@ -1,0 +1,168 @@
+.wrapper_s{
+    width:800px;
+    height:700px;
+    padding:44px;
+}
+
+.wrapper_s .content{
+    margin-top:12px;
+}
+
+.container_d{
+    margin-top: 60px;
+    background:#fdfdfd;
+    padding:20px;
+    width:780px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.2);
+    border:1px solid #adadad;
+}
+
+.wrapper_t{
+    display:inline-block;
+    float:left;
+    width:540px;
+}
+
+.container_l{
+    display:inline-block;
+    float:left;
+    margin:10px 0px 0px 12px;
+    width:228px;
+    background:white;
+    box-shadow:inset 0px 0px 2px #d1d1d1;
+    height:536px;
+
+}
+
+.images{
+    display:inline;
+    padding:4px 0px;
+    position:relative;
+    float:left;
+    height:260px;
+}
+
+.panel2{
+    background:#fafafa;
+    box-shadow:0px 0px 2px #d1d1d1;
+    margin-top:8px;
+}
+
+.informations {
+    float:left;
+    position:relative;
+    left:10px;
+    height:248px;
+    width:360px;
+    margin-top:4px;
+}
+.wrapper_b{
+     font:12.5px roboto;
+}
+.images img{
+    width:160px;
+    height:240px;
+    border:5px solid white;    
+    box-shadow:0px 0px 2px #c3c3c3;
+    
+}
+
+.uli{
+    list-style-type:none;
+}
+
+.uli li{
+    padding:8px;
+
+}
+.isbns{
+    position:relative;
+    float:right;
+    font:60px barcode font;
+}
+
+.title2{
+    color:#202020;
+    font-size:18px;
+}
+
+.author2,.publisher,.year{
+    color:maroon;
+    font-size:16px;    
+}
+
+.label{
+    font-weight:bold;
+    font:14px roboto;
+}
+.summary{
+    margin-bottom:12px;
+    font:14px roboto;
+    clear:both;
+    color:#434343;
+}
+
+.summary p{
+    padding:12px;
+    width:500px;
+    text-align: justify;
+}
+
+.buybox{
+    padding:0 12px;
+    height:120px;
+    text-align:right;
+}
+
+.buybox input[type="text"]{
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 2px rgb(242, 242, 242) inset;
+    font-size: 12.5px;
+    height: 26px;
+    margin: 0 2px 8px 24px;
+    padding: 4px;
+}
+
+.buttons:first-child{
+    width:100px;
+}
+
+.buttons{
+    background: none repeat scroll 0 0 #fefefe;
+    border: 1px solid rgba(120, 120, 120, 0.4);
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 1.5px rgb(195, 195, 195);
+    color: rgb(47, 47, 47);
+    cursor: pointer;
+    font:bold 12px roboto;
+    height: 40px;
+    width:82px;
+    margin:-8px 0px;
+    text-align: center;
+}
+
+.reviews{
+    top:8px;
+        position:relative;
+        clear:both;
+        width:100%:
+        display:block;
+        height:20px;
+        
+}
+.close {
+    background:url("../images/close.png") no-repeat center;
+    padding:12px;
+    position:absolute;
+    right:0px;
+    top:62px;
+    z-index:1;
+    opacity:0.5;    
+    -moz-transition:all 0.2s;
+}
+.close:hover {
+    opacity:0.9;
+    cursor: pointer;
+    -moz-transition:all 0.2s;
+}

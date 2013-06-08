@@ -1,0 +1,840 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, section, aside {
+    margin: 0;
+    padding: 0;
+}
+
+@-moz-document url-prefix() {
+    .s2 {
+       position:relative;
+       top: 1px;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background: -moz-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+    max-width: 1500px;
+    background: -webkit-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+    min-width: 1004px;
+}
+
+noscript {
+    background: none repeat scroll 0 0 rgb(255, 0, 0);
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    color: rgb(244, 244, 244);
+    display: block;
+    font: bold 15px roboto;
+    padding: 16px;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+}
+
+.loading {
+    background: url("../images/spinner.gif") no-repeat scroll center center transparent;
+}
+
+.sidebar {
+    background: none repeat scroll 0 0 rgb(250, 250, 250);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) inset;
+    display: inline;
+    overflow:auto;
+    float: left;
+    margin-left: 0;
+    margin-top:78px;
+    position: fixed;
+    width:156px;
+    height:88%;
+    border-radius:0px 0px 8px 0px;
+}
+
+.container {
+    float: right;
+    margin: 84px auto;
+    width: 84%;
+}
+
+/* HEADER STYLES START */
+
+header {
+    background: none repeat scroll 0 0 rgb(64, 150, 238);
+    box-shadow: 0 0 3px grey;
+    height: 34px;
+    padding: 4px 1%;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 5;
+}
+
+nav {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
+nav a{
+        color: white;
+        text-shadow: 0 0 1.5px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    display: inline;
+    float: left;
+    font: bold 28px marmelad;
+    height: 32px;
+    letter-spacing: -2px;
+    margin-top: 6px;
+    width: 152px;
+    transition: all 1s linear;
+    -webkit-transition: all 0.3s linear;
+
+}
+
+.logo:hover {
+    text-shadow: 0px 0px 2px rgba(255,255,255,.2);
+    -webkit-transition: all 0.3s linear;
+}
+
+.a2 {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.d2{
+    width:80px;
+}
+
+.n2{
+    display:inline-block;
+    position:relative;
+    top:-16px;
+}
+.n3 li {
+    display: inline-block;
+    padding: 12px 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.n3 {
+    display: inline-block;
+    font:bold 14px roboto;
+}
+
+.i2 {
+    border: 1px solid blue;
+    border-radius: 4px 0px 0px 4px;
+    display: inline;
+    height: 30px;
+    padding: 0 8px;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    width: 280px;
+}
+.i2:focus {
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    width: 360px;
+}
+
+.n5{
+    margin-left:16px; 
+}
+
+.n5,.n6{
+    height:40px
+}
+.s2{
+    height:32px;
+    width:28px;
+    border:1px solid;
+    border-color:blue blue blue #c3c3c3;
+    margin:0px -8px;
+    background:url("../images/7.png") no-repeat center,white;
+    border-radius:0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+.ui {
+    display: inline-block;
+    float: right;
+    height: 32px;
+    position: relative;
+    right: 10px;
+}
+.ub li {
+    display: inline-block;
+    margin-top: -9px;
+}
+.login {
+    background: none repeat scroll 0 0 transparent;
+}
+.tx2{
+    border-radius: 3px;
+    cursor: pointer;
+    border: medium none;
+    color: rgb(245, 245, 245);
+    display: inline-block;
+    font:bold 12px tahoma;
+    position: relative;
+    text-shadow: none;
+    top: -12px;
+}
+.cart {
+    background: url("../images/cart.png") no-repeat scroll 0 7px transparent;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 42px;
+    width: 46px;
+    padding-right: 5px;
+}
+
+.counter {
+    background: none repeat scroll 0 0 white;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: none;
+    color: red;
+    cursor: pointer;
+    display: inline;
+    float: right;
+    font: bold 13px roboto;
+    margin-right: -2px;
+    padding: 2px;
+    position: relative;
+    text-align: center;
+    top: -5px;
+    width: 16px;
+}
+
+.st {
+    width: 197px;
+}
+.sc {
+    width: 64px;
+}
+.cartcontent .sc {
+    width: 65px;
+}
+
+.carthead {
+    background: none repeat scroll 0 0 rgba(240, 70, 0, 0.9);
+    color: rgb(250, 250, 250);
+    font: bold 15px roboto;
+}
+
+.cartbox h3 {
+    color: rgb(255, 0, 51);
+    font-family: roboto;
+    font-size: 15px;
+    padding: 8px;
+    height:20px;
+    box-shadow:0px 1px 1.5px #c3c3c3;
+}
+.cartcontent {
+    background: none repeat scroll 0 0 rgb(254, 254, 241);
+    font: 13px roboto;
+}
+.cartfoot {
+    background: none repeat scroll 0 0 rgba(120, 210, 200, 0.2);
+    color: rgb(67, 67, 67);
+    font: bold 15px roboto;
+}
+.ch, .cm, .cf {
+    display: inline-block;
+    padding: 8px 4px;
+    text-align: center;
+}
+.ch:last-child, .cm:last-child, .cf:last-child {
+    border-right: medium none;
+}
+.cf {
+    height: 22px;
+}
+
+.cme{
+    color: #434343;
+    text-align: center;
+    font: 14px roboto;
+    padding: 12px;
+}
+.cb {
+    border: 1px solid rgba(120, 120, 120, 0.3);
+    float: right;
+    height: 36px;
+    margin: 10px 0;
+    text-align: center;
+    width: 80px;
+}
+.sb {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid;
+    border-color: rgba(120, 120, 120, 0.3)  rgba(120, 120, 120, 0.3)  rgba(120, 120, 120, 0.4)  rgba(120, 120, 120, 0.4);
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 1.2px #c1c1c1;
+    color: rgb(67, 67, 67);
+    cursor: pointer;
+    text-align: center;
+    margin-right:8px;
+}
+.lb {
+    height: 28px;
+    margin: 10px 24px;
+    width: 60px;
+}
+
+.user {
+    border: 1px solid blue;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 34px;
+    width: 40px;
+}
+
+.user img {
+    height: 100%;
+    width: 100%;
+}
+.userpanel {
+    background: none repeat scroll 0 0 rgb(250, 250, 250);
+    box-shadow: 0 0 4px rgb(195, 195, 195);
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    width:240px;
+}
+.userpanel:before {
+    border-color: rgb(250, 250, 250) transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 7px 7px;
+    content: "";
+    margin: -7px 12px;
+    position: absolute;
+    right: 0;
+    width: 0;
+}
+.userpanel ul {
+    box-shadow: 0 1px 1px rgb(195, 195, 195) inset;
+    clear: both;
+    list-style-type: none;
+    padding: 12px 4px;
+    position: relative;
+    text-align: center;
+    top: 8px;
+}
+.userpanel li {
+    text-align:center;
+    display:inline-block;
+}
+
+.userpanel form{
+    display:inline-block;
+}
+
+.userpanel label{
+    display:inline-block;
+    color:#434343;
+    font-family:roboto;
+    padding:12px;
+}
+.userpanel input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    font:14px roboto;
+    height: 32px;
+}
+.userpanel input:hover {
+    background: none repeat scroll 0 0 rgba(120, 70, 220, 0.1);
+}
+.accountbox img {
+    float: left;
+    height: 80px;
+    padding:8px  4px;
+    width: 80px;
+}
+.accountbox label {
+    font-weight: bold;
+    padding: 12px 4px;
+    text-align: center;
+}
+
+.cartbox {
+    right:0;
+    width: 360px;
+}
+
+.cartbox, .loginbox {
+    background: none repeat scroll 0 0 rgb(250, 250, 250);
+    box-shadow: 0 1px 5px 1px rgba(0,0,0,.2);
+    display: none;
+    position: absolute;
+}
+.loginbox:before, .cartbox:before {
+    border-color: rgb(250, 250, 250) transparent;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: -8px;
+    width: 0;
+}
+
+.loginbox {
+    padding: 16px 8px;
+    right: 40px;
+    width: 200px;
+}
+
+.loginbox li {
+    display: inline-block;
+    width: 200px;
+}
+
+.loginbox input[type="text"], [type="password"], input[type="checkbox"] {
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 2px rgb(242, 242, 242) inset;
+    font-size: 12.5px;
+    height: 26px;
+    margin: 0 2px 6px 24px;
+    padding: 4px;
+}
+
+.loginbox input[type="checkbox"] {
+    height: 0;
+    margin: 8px -16px;
+    position: relative;
+    top: 2px;
+}
+
+.loginbox label {
+    color: red;
+    display: inline-block;
+    font: 12px roboto;
+    margin: 0 20px;
+    padding: 4px;
+}
+
+/* ---- HEADER STYLES END  && BODY STYLES START ---- */
+
+.sr2{
+    display: none;
+}
+.header {
+    background: none repeat scroll 0 0 white;
+    font-size: 13px;
+    padding: 12px 0;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 4;
+}
+.tleft {
+    background: none repeat scroll 0 0 white;
+    display: inline-block;
+    float: left;
+    padding: 0 1%;
+    width: 140px;
+    padding-right: 0px;
+}
+
+.tleft h2 {
+    color: rgb(67, 67, 67);
+    font-size: 14px;
+}
+.tright {
+    display: inline;
+    float: left;
+    padding: 0 0.2%;
+}
+.header h2, .panel_f h2 {
+    color: rgb(96, 96, 96);
+    font-family: helvetica;
+    font-size: 12px;
+}
+
+.header a {
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+}
+.header a:hover {
+    color: rgb(67, 67, 67);
+    text-decoration: none;
+}
+
+.panel_j {
+    background: none repeat scroll 0 0 rgba(250, 250, 250, 0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    padding: 8px;
+}
+
+.panel_j label {
+    font-family: segoe ui;
+    padding: 0 4px;
+    position: relative;
+}
+
+.panel_r .wrapper {
+    margin: 0;
+    overflow: visible;
+}
+
+.panel_r .content {
+    background: none repeat scroll 0 0 rgb(255, 255, 255);
+    height: 278px;
+    width: 103%;
+}
+.content_c {
+    position: relative;
+    top: -24px;
+    width: 105%;
+}
+.panel {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 1px rgb(195, 195, 195);
+    height: 252px;
+    margin-top: 12px;
+    padding: 4px;
+}
+.ulco {
+    width: 9999px;
+}
+
+.categories:hover {
+    background: none repeat scroll 0 0 rgb(244, 244, 244);
+    box-shadow: 0 0 2px rgba(50, 50, 50, 0.3) inset;
+    cursor: pointer;
+    transition: all 0.2s linear 0s;
+}
+
+.wrapper_r img {
+    height: 48px;
+    width: 48px;
+}
+.showcase .social {
+    margin-top: 20px;
+}
+.social {
+    float: right;
+    height: 120px;
+    margin-top: -142px;
+    position: relative;
+    right: 0;
+    width: 44px;
+}
+.social ul {
+    padding: 10px;
+    position: relative;
+    top: -24px;
+}
+.social li {
+    list-style: none outside none;
+}
+.like, .tweet, .share, .love {
+    cursor: pointer;
+    display: block;
+}
+
+
+.wrapper {
+    display: inline-block;
+    overflow: hidden;
+    padding: 12px;
+    width: 88%;
+    margin:0  auto;
+}
+.arrow_l, .arrow_r {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 2px rgb(174, 174, 174);
+    display: inline;
+    float:left;
+    height: 60px;
+    opacity: 0.75;
+    position: relative;
+    top:80px;
+    transition: opacity 0.5s ease 0s;
+    width: 36px;
+}
+.arrow_l {
+    background: url("../images/arrow.png") no-repeat 10px center, red;
+    background-size: 116% auto;
+}
+.arrow_r {
+    background: url("../images/arrow.png") no-repeat -15px center, red;
+    background-size: 116% auto;
+    position:relative;
+    float:right;
+    right:0px;
+    top:80px;
+}
+.arrow_r:hover, .arrow_l:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s ease 0s;
+}
+
+
+.panel_l {
+    background: url("../images/slides/slides5.png") no-repeat scroll center center, none repeat scroll 0 0 rgb(250, 250, 250);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 280px;
+    width: 58%;
+}
+.panel_r {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    display: block;
+    float: right;
+    margin-top: -274px;
+    padding: 4px;
+    width: 40%;
+     border-radius:none;
+}
+
+.panel_r .title {
+    margin-top: 8px;
+}
+.panel_r .price {
+    margin-top: 4px;
+}
+.panel_t {
+    height: 78px;
+}
+.panel_s {
+    height: 120px;
+}
+.panel_f {
+    background: none repeat scroll 0 0 white;
+    box-shadow: none;
+    height: 32px;
+    border-radius: 2px 2px 0px 0px
+}
+.panel_f h2 {
+    font-size: 14px;
+    padding: 8px;
+    text-align: center;
+}
+.categories {
+    background: none repeat scroll 0 0 rgba(250, 250, 250, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgb(39, 39, 39);
+    font-family: helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    list-style: none outside none;
+    padding: 16px;
+}
+
+.footer {
+    position: relative;
+}
+
+.content {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    display: inline;
+    float: left;
+    font-family: roboto;
+    height: 230px;
+    margin-right:12px;
+    overflow: hidden;
+    width: 160px;
+}
+.content img {
+    height:90%;
+    width:100%;
+}
+.dt {
+    margin-top:-72px;
+    background:rgba(240,240,240,.9);
+    position:relative;
+}
+
+.at{
+    display:inline;
+    font:bold 13px helvetica;
+    padding-left:4px;
+}
+
+.panel_r .dt {
+    margin-top: -78px;
+}
+.price, .title, .author {
+    font:13px helvetica;
+    font-size: 13px;
+    padding: 4px;
+}
+.price {
+    background: none repeat scroll 0 0 rgba(70, 80, 120, 1);
+    border: 0 solid;
+    box-shadow: 0 0 2px #434343;
+    color: rgb(235, 235, 235);
+    font-weight: bold;
+    height:24px;
+    padding:7px 4px;
+    text-align: center;
+    width: 100%;
+    margin-top:4px;
+}
+.content {
+    font-family: roboto;
+}
+
+.title {
+    color: brown;
+    height: 28px;
+    margin-top: -29px;
+}
+.title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.author {
+    color: teal;
+    height: 15px;
+    overflow: hidden;
+    display:inline;
+}
+.author:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.connect li {
+    display: inline;
+}
+.connect ul {
+    margin-top: 12px;
+}
+.connect .wrapper_r {
+    border-left:1px solid grey;
+    padding-left:2%;
+    color: rgb(67, 67, 67);
+    display: inline-block;
+    position: relative;
+    left:50%;
+    top:-80px;
+    z-index: 1;
+    width:48%;
+}
+
+.connect .wrapper {
+    display:inline;
+    position: relative;
+    float:left;
+}
+
+.ema{
+    margin-top:20px;
+    height:42px;
+    width:50%;
+    padding:2px 12px;
+    border:1px solid #c3c3c3;
+    box-shadow:inset 0px 0px 1.2px #c3c3c3;
+    border-radius:2px;
+    font-weight:bold;
+    margin-left:-132px;
+ }
+
+.wrapper label{
+    font:bold 14px roboto;
+    color:#535353;
+    position:relative;
+    top:-36px;
+}
+
+
+.ctr{
+    margin:0 4%;
+}
+
+/* FOOTER STYLES START */
+
+footer {
+    background: none repeat scroll 0 0 rgb(64, 150, 238);
+    box-shadow: 0 0 4px rgb(173, 173, 173);
+    position: relative;
+    width: 100%;
+}
+
+.f3 {
+    color: rgb(250, 250, 250);
+    display: inline;
+    float: left;
+    margin: 16px;
+}
+.f5 {
+    margin-top: 8px;
+}
+
+.f3{
+    font:bold 14px tahoma;
+}
+
+.f5 li {
+    display: block;
+    float: none;
+    font:normal 12.5px tahoma;
+    margin: 0;
+}
+.f6 {
+    background: none repeat scroll 0 0 rgb(0, 4, 4);
+    box-shadow: 0 1px 3px rgb(32, 32, 32);
+    clear: both;
+    color: rgb(244, 244, 244);
+    font-family: helvetica;
+    font-size: 12px;
+    padding: 12px;
+    position: relative;
+}
+
+.fb2 {
+    cursor: pointer;
+    float: right;
+    width: 110px;
+}
+
+
+.right, .left {
+    display: inline-block;
+    height: 252px;
+    width: 4%;
+}
+
+.right {
+    float: right;
+    position: relative;
+    right: 0;
+}
+
+.ajaxshadow {
+    background: none repeat scroll 0 0 white;
+    cursor: pointer;
+    display: none;
+    height: 150%;
+    opacity: 0.7;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+.ajaxcontainer {
+    display: none;
+    margin: -20px auto;
+    position: fixed;
+    z-index: 12;
+}
+

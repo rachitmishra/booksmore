@@ -1,0 +1,721 @@
+body {
+    background: -moz-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+    min-width: 1004px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, section, aside {
+    margin: 0;
+    padding: 0;
+}
+
+noscript {
+    background: none repeat scroll 0 0 rgb(255, 0, 0);
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    color: rgb(244, 244, 244);
+    display: block;
+    font: bold 15px roboto;
+    padding: 16px;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+}
+
+ul {
+    list-style-type: none;
+}
+
+form{
+    display:inline-block;
+}
+
+header {
+    background: none repeat scroll 0 0 rgb(64, 150, 238);
+    box-shadow: 0 0 3px grey;
+    height: 34px;
+    padding: 4px 1%;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 5;
+}
+
+nav a {
+    color: white;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    font: bold 28px marmelad;
+    height: 32px;
+    letter-spacing: -2px;
+    margin-top: 6px;
+    text-shadow: 0 0 1.5px rgba(0, 0, 0, 0.2);
+    width: 152px;
+    text-decoration: none;
+}
+
+.ui {
+    display: inline-block;
+    float: right;
+    height: 32px;
+    position: relative;
+    right: 10px;
+}
+.ub li {
+    display: inline-block;
+    margin-top: -9px;
+}
+
+.login {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+}
+
+.tx2 {
+    border: medium none;
+    color: rgb(245, 245, 245);
+    display: inline-block;
+    font:bold 12px tahoma;
+    position: relative;
+    text-shadow: none;
+    top: -12px;
+
+}
+.cart {
+    background: url("../images/cart.png") no-repeat scroll 0 7px transparent;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 42px;
+    width: 46px;
+    padding-right: 6px;
+}
+nav {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
+.title{
+    text-align:left;
+    font:bold 16px century gothic;
+    background:white;
+    padding:10px 24px;
+    color:#707070;
+    box-shadow:0px 0px 1.2px #c3c3c3;
+}
+
+input[type="email"]{
+    height:20px;
+    width:384px;
+    padding:6px;
+    border:1px solid #adadad;
+    box-shadow:inset 0px 0px 1.2px rgba(0,0,0,.2);
+    border-radius:3px;
+    margin-left: 20px;
+}
+
+.cme{
+    color: #434343;
+    text-align: center;
+    font: 14px roboto;
+    padding: 12px;
+}
+
+.cartpanel {
+    margin-left: -24px;
+    width: 648px;
+}
+
+.ca {
+    background: none repeat scroll 0 0 white;
+    box-shadow: 0 0 2px rgb(195, 195, 195);
+    color: rgb(67, 67, 67);
+    font-weight: bold;
+    height: 32px;
+    left: -36px;
+    position: relative;
+    top: 12px;
+}
+
+.shl{
+    margin:32px 124px;
+}
+.cartfoot{
+    display:none;
+}
+
+.wp2 ul li{
+    font-family:roboto;
+    margin:4px;
+}
+
+fieldset{
+    border:1px solid transparent;
+}
+
+.spb{
+    display: none;
+}
+
+.wp2{
+    padding:12px;
+    text-align:center;
+}
+
+.box1{
+    display:inline-block;
+    width:80px;
+    height:20px;
+    margin-top:4px;
+    padding:12px;
+    box-shadow:0px 0px 1.5px #adadad;
+}
+
+.fc{
+    background:rgb(87, 128, 209);
+    color:#f4f4f4;
+}
+
+.tw{
+    background:rgb(66, 173, 255);
+    color:#f4f4f4;
+}
+
+.gg{
+    background:rgb(252, 87, 37);
+    color:#f4f4f4;
+}
+
+.oi{
+    background:orange;
+    color:#f4f4f4;
+}
+
+.is{
+    position: relative;
+    left: -120px;
+}
+
+.isa{
+    position:relative;
+    left:44px;
+    font-size:13px;
+    padding:4px;
+    color:#434343;
+}
+
+
+
+.ct {
+    background: none repeat scroll 0 0 seagreen;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    color: rgb(244, 244, 244);
+    font-weight: bold;
+    height: 36px;
+    margin: 3px -28px;
+    padding: 8px;
+}
+
+.orb {
+    background:rgba(67, 67, 67,.55);
+    border-radius: 24px;
+    color: rgb(243, 243, 243);
+    font:bold 18px roboto;
+    height: 19px;
+    padding:10px 8px;
+    width: 24px;
+    display: inline-block;
+    margin: 4px;
+}
+
+.cm{
+    height:28px;
+}
+
+.low{
+    float:right;
+    font-weight:bold;
+}
+.cartcontents{
+    padding:20px;
+    text-align:center;
+}
+
+.container {
+    display: block;
+}
+
+.panel {
+    padding: 4px;
+    width:600px;
+    margin:12px auto 52px;
+}
+
+
+.panel_l,.panel_s,.panel_t,.panel_q {
+    background: none repeat scroll 0 0 rgb(252, 252, 252);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    color: #434343;
+    font:bold 16px roboto;
+    height:18px;
+    margin: 80px auto 10px;
+    padding:12px 24px;
+    text-align:left;
+}
+
+.panel_s{
+    background: none;
+    box-shadow: none;
+    margin: -60px auto 10px;
+    color: #606060;
+}
+
+.panel_q{
+    background: none;
+    box-shadow: none;
+      margin: -12px 28% 40px;
+}
+
+.panel_q img{
+    margin:-6px 4px;
+}
+
+.panel_co{
+ margin: -60px auto 160px;
+}
+
+.panel_t {
+    margin: 16px auto 80px;
+}
+
+
+footer {
+    background: none repeat scroll 0 0 rgb(64, 150, 238);
+    box-shadow: 0 0 4px rgb(173, 173, 173);
+    position: relative;
+    width: 100%;
+}
+
+.f3 {
+    color: rgb(250, 250, 250);
+    display: inline;
+    float: left;
+    margin: 16px;
+}
+.f5 {
+    margin-top: 8px;
+}
+
+.f3{
+    font:bold 14px tahoma;
+}
+
+.f5 li {
+    display: block;
+    float: none;
+    font:normal 12.5px tahoma;
+    margin: 0;
+}
+.f6 {
+    background: none repeat scroll 0 0 rgb(0, 4, 4);
+    box-shadow: 0 1px 3px rgb(32, 32, 32);
+    clear: both;
+    color: rgb(244, 244, 244);
+    font-family: helvetica;
+    font-size: 12px;
+    padding: 12px;
+    position: relative;
+}
+
+.fb2 {
+    cursor: pointer;
+    float: right;
+    width: 110px;
+}
+
+.userpanel {
+    background: none repeat scroll 0 0 rgb(250, 250, 250);
+    box-shadow: 0 0 4px rgb(195, 195, 195);
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    width:240px;
+}
+.userpanel:before {
+    border-color: rgb(250, 250, 250) transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 7px 7px;
+    content: "";
+    margin: -7px 12px;
+    position: absolute;
+    right: 0;
+    width: 0;
+}
+.userpanel ul {
+    box-shadow: 0 1px 1px rgb(195, 195, 195) inset;
+    clear: both;
+    list-style-type: none;
+    padding: 12px 4px;
+    position: relative;
+    text-align: center;
+    top: 8px;
+}
+.userpanel li {
+    text-align:center;
+    display:inline-block;
+}
+
+.userpanel form{
+    display:inline-block;
+}
+
+.userpanel label{
+    display:inline-block;
+    color:#434343;
+    font-family:roboto;
+    padding:12px;
+}
+.userpanel input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    font-family: roboto;
+    font-size: 14px;
+    height: 32px;
+}
+.userpanel input:hover {
+    background: none repeat scroll 0 0 rgba(120, 70, 220, 0.1);
+}
+.accountbox img {
+    float: left;
+    height: 80px;
+    padding:8px  4px;
+    width: 80px;
+}
+
+.counter {
+    background: none repeat scroll 0 0 white;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: none;
+    color: red;
+    cursor: pointer;
+    display: inline;
+    float: right;
+    font: bold 13px roboto;
+    margin-right: -2px;
+    padding: 2px;
+    position: relative;
+    text-align: center;
+    top: -5px;
+    width: 16px;
+}
+
+.loginbox {
+    padding: 16px 8px;
+    right: 40px;
+    width: 200px;
+}
+
+.loginbox {
+    background: none repeat scroll 0 0 rgb(250, 250, 250);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 1px 3px rgb(195, 195, 195);
+    display: none;
+    position: absolute;
+}
+.loginbox:before, .cartbox:before {
+    border-color: rgb(250, 250, 250) transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: -8px;
+    width: 0;
+}
+
+.loading {
+    background: url("../images/spinner.gif") no-repeat scroll center center transparent;
+}
+
+.user {
+    border: 1px solid blue;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 34px;
+    width: 40px;
+}
+
+.user img {
+    height: 100%;
+    width: 100%;
+}
+
+.loginbox input[type="text"], [type="password"], input[type="checkbox"] {
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 2px rgb(242, 242, 242) inset;
+    font-size: 12.5px;
+    height: 26px;
+    margin: 0 2px 6px 24px;
+    padding: 4px;
+}
+
+.loginbox input[type="checkbox"] {
+    height: 0;
+    margin: 8px -16px;
+    position: relative;
+    top: 2px;
+}
+
+.loginbox label {
+    color: red;
+    display: inline-block;
+    font: 12px roboto;
+    margin: 0 20px;
+    padding: 4px;
+}
+.accountbox label {
+    font-weight: bold;
+    padding: 12px 4px;
+    text-align: center;
+}
+
+.loginbox li {
+    display: inline-block;
+    width: 200px;
+}
+
+
+.st {
+    width: 340px;
+}
+.sc {
+    width: 64px;
+}
+.cartcontent .sc {
+    width: 65px;
+}
+.cartbox {
+    width: 360px;
+}
+.carthead {
+    background: none repeat scroll 0 0 rgba(240, 70, 0, 0.9);
+    color: rgb(250, 250, 250);
+    font: bold 15px roboto;
+}
+
+.cartbox h3 {
+    color: rgb(255, 0, 51);
+    font-family: roboto;
+    font-size: 15px;
+    padding: 8px;
+    height:20px;
+    box-shadow:0px 1px 1.5px #c3c3c3;
+}
+.cartcontent {
+    background: none repeat scroll 0 0 rgb(254, 254, 241);
+    border-bottom: 1px solid grey;
+    font: 16px roboto;
+}
+.cartfoot {
+    background: none repeat scroll 0 0 rgba(120, 210, 200, 0.2);
+    color: rgb(67, 67, 67);
+    font: bold 15px roboto;
+}
+.ch, .cm, .cf {
+    display: inline-block;
+    padding: 8px 4px;
+    text-align: center;
+}
+.ch:last-child, .cm:last-child, .cf:last-child {
+    border-right: medium none;
+}
+.cf {
+    height: 22px;
+}
+.cb {
+    border: 1px solid rgba(120, 120, 120, 0.3);
+    float: right;
+    height: 36px;
+    margin: px 0;
+    text-align: center;
+    width: 80px;
+}
+
+.llb{
+    background:-moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.1);
+    border-radius:4px;
+}
+
+.si{
+    background:teal;
+    height:36px;
+    padding:8px;
+    position:relative;
+    top:-20px;
+    font-weight:bold;
+    color:white;
+    border-radius:5px;
+}
+
+.sb {
+    border: 1px solid;
+    border-color: rgba(120, 120, 120, 0.3)  rgba(120, 120, 120, 0.3)  rgba(120, 120, 120, 0.4)  rgba(120, 120, 120, 0.4);
+    cursor: pointer;
+    text-align: center;
+}
+.lb {
+    height: 28px;
+    margin: 10px 24px;
+    width: 60px;
+}
+
+
+#tabs {
+    float: left;
+    margin:8px 40px;
+}
+
+#tabs ul li {
+    background:rgb(165, 28, 225);
+    display: inline;
+    float: left;
+    font-weight: bold;
+    height: 24px;
+    margin: 2px 0;
+    padding-top:2px;
+    position: relative;
+    width:26px;
+    border-radius:32px;
+    margin-left:85px;
+    text-align:center;
+}
+
+
+#tabs a {
+    color:white;
+    font:bold 14px roboto;
+    text-decoration: none;
+    padding: 0px 6px;
+}
+
+.activetab {
+    color: rgb(252, 252, 252);
+    opacity:1;
+    box-shadow:inset 0px 0px 2px rgba(0,0,0,.3);
+}
+
+.unactivetab {
+    opacity:0.5;
+}
+
+.unactivetab a {
+    color: rgba(0,0,0,1);
+}
+.activepanel {
+    display: block;
+    overflow: auto;
+}
+.unactivepanel {
+    display: none;
+}
+#tab-contents {
+    padding: 4px;
+    position: relative;
+    width: 660px;
+    
+}
+.panels {
+    background:whitesmoke;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    min-height: 240px;
+    position: relative;
+    overflow:hidden;
+    border-radius:3px 3px 3px 3px;
+}
+
+.tx{
+    font:14px roboto;
+
+}
+
+.shipping ul{
+    text-align:center;
+}
+
+.sh{
+    text-align:left;
+    display:inline-block;
+    color:#434343;
+    font-weight:bold;
+    margin:0 20px;
+    width:40px;
+}
+
+.sl{
+    position:relative;
+    left:-180px;
+    font-size:16px;
+}
+
+.shipping input{
+    height:26px;
+    width:300px;
+    margin:4px;
+    border-radius: 4px;
+    padding:4px 8px;
+    border:1px solid #c3c3c3;
+    box-shadow:inset 0px 0px 1.2px #c3c3c3;
+}
+
+.payment ul{
+    margin:20px 220px;
+}
+
+.payment input{
+    width:40px;
+    font:16px roboto;
+}
+
+.payment label,.payment .sm{
+    font:bold 16px roboto;
+    color:#373737;
+}
+
+.payment .sm{    
+    font-weight:normal;
+    margin-top:4px;
+    width:200px;
+    height:20px;
+    padding:12px;
+    background:rgba(250,255,250,1);
+    box-shadow:0px 0px 2px rgba(0,0,0,.3);
+    
+}
+
+.sj{
+    width:300px;
+}
+
+.hide{
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.shipping {
+    padding:20px;
+}
+
+#confirmorder .cartpanel{
+    width:660px;
+    margin:0;
+}

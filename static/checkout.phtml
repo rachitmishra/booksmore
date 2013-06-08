@@ -1,0 +1,66 @@
+<?php header("Content-Type:text/html;charset=utf-8");?>
+<!DOCTYPE html > 
+<html>
+<head><title><?php print(' Checkout | Booksmore - Online Book Store & Library, India') ?></title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="styles/checkoutstyler.css"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/checkout.js"></script>
+</head>
+<body>
+<noscript><div class="jserror">Sorry ! JAVASCRIPT is turned OFF ! tis page has not yet been configured to use without javascript. :(</div></noscript>
+<header>
+	<nav>
+		<a href="http://localhost/booksmore.in/default.php" class="logo">booksmore</a>
+		</nav>
+	<div class="ui">
+		<ul class="ub">
+			<li><label class="tx2">Call us <b>0532-2234432 |</b></label></li>
+			<li><label class="tx2"><b>Help |</b> </label></li>
+		<?php
+			@ session_start( );
+			if(!isset($_SESSION['count']))
+			$_SESSION['count']=0;
+			if(!isset($_SESSION['username']))
+			echo '<li><input type="button" id="login" class="tx2 login" name="login" value="Sign In" /></li>';
+			echo '<li><button id="cart" class="cart" name="cart"><div id="counter" class="counter">'.$_SESSION['count'].'</div></button></li>';
+			if(isset($_SESSION['username'])){
+				echo '<li><button id="user" class="user" name="setting"><img src="images/no_pic.gif" /></button></li>';
+			}
+			
+		?>
+		</ul>
+		<div class="loginbox">
+			<form action="login.php" method="post">
+			<ul>
+			<li><label for="username" >Username</label><input type="text" name="username" placeholder="username" title="Enter your username." required/></li>
+			<li><label for="password" >Password</label><input type="password" name="password" placeholder="password" title="Enter your username." required/></li>
+			<li><label for="persistent" >Remember Me</label><input type="checkbox" name="persistent" title="Check if you trust this computer or mobile."/></li>
+			<li><input type="submit" value="Sign In" class="sb lb llb" /></li>
+			</ul>
+			</form>
+		</div>
+		<div class="userpanel"> 
+              		<div>
+                     			 <div class="accountbox">
+                     			 <?php
+                        			echo"<p>";
+                        				echo"<img src=\"images/no_pic.gif\">";
+                        				echo"<label class=\"label_u\">Hi, ".$_SESSION['username']."</label>";
+                        				echo"<label></label>";
+                        			echo"</p>";
+                        		?>
+                       			 </div>
+                       		 	<ul>
+                        	           <li><input type="submit" id="report" value="Change Shipping Address" /> </li>
+                        	           <form method="post" action="logout.php">
+                       		            <input type="hidden" name="action" value="logout" />
+                       		           <li><input type="submit" value="Sign Out" /></li>
+                        	           </form> 
+                        	           <li><input type="submit" id="report" value="Report" /> </li>
+                        	          <li><input type="submit" class="settings" value="Other Settings" /></li> 
+                        	          </ul>
+                          </div>
+                          </div>
+		</div>
+</header>

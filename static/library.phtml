@@ -1,0 +1,90 @@
+<!DOCTYPE html >
+<html> 
+<meta http-equiv="Content-type" content="text/html;charset=utf-8" language="en" />
+<head><title><?php print('Booksmore - Online Book Store & Library, India') ?></title>
+<link rel="stylesheet" href="styles/librarystyler.css"/>
+<link rel="stylesheet" href="styles/scrollstyler.css"/>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/default.js"></script>
+<script type="text/javascript" src="scripts/scroller.js"></script>
+</head>
+<body>
+<noscript><div id="scriptoffmessage">Sorry ! JAVASCRIPT is turned OFF ! this page has not yet been configured to use without javascript. :(</div></noscript>
+<header>
+	<nav>
+		<a class="logo">booksmore</a>
+		<div class="nav2">
+			<ul>
+				<li id="sto" class="dc"><a href="http://localhost/booksmore.in/default.php"> Store </a></li>
+				<li id="lib" class="act dc"><a href="http://localhost/booksmore.in/library.php">Library </a></li>
+				<li class="br"><form action="actions.php" method="get">
+					<input type="search" name="search" class="input2" ajaxify="search" placeholder="Search Book Name, ISBN, Author" /><button type="submit" class="search"></button></form></li>
+			</ul>
+			</div>
+		</nav>
+	<div class="ui">
+		<ul class="ub">
+		<?php
+			@ session_start( );
+			if(!isset($_SESSION['username']))
+			echo '<li><input type="button" id="login" class="action1 login" name="login" value="Sign In" /></li>';
+			if(isset($_SESSION['username'])){
+				echo '<li><button id="user" class="user" name="setting"><img src="images/no_pic.gif" /></button></li>';
+			}
+			
+		?>
+		</ul>
+		<div class="cartbox">
+			<div>	<form action="checkout.php" method="post">
+				<h3>Shopping Cart</h3>
+				<div class="carthead">
+					<ul>
+					<li class="cart5 st" >Book</li>
+					<li class="cart5 ss">Quantity </li>
+					<li class="cart5 ss">Price</li>
+					</ul>
+					</div>
+				<div class="cartbox2">
+				<div class="cartcontent">
+					<?php 	require_once("support/functions_c.php");
+						 show_cart( ) ?>
+					</div>
+				</div>
+				
+				</div>
+			</div>
+		<div class="loginbox">
+			<form action="login.php" method="post">
+			<ul>
+			<li><label for="username" class="lu">Username</label><input type="text" name="username" placeholder="username" title="Enter your username." required/></li>
+			<li><label for="password" class="lu">Password</label><input type="password" name="password" placeholder="password" title="Enter your username." required/></li>
+			<li><label for="persistent" class="lu">Remember Me</label><input type="checkbox" name="persistent" title="Check if you trust this computer or mobile."/></li>
+			<li><input type="submit" value="Sign In" class="sb lb" /></li>
+			</ul>
+			</form>
+		</div>
+		<div class="userpanel"> 
+              		<div>
+                     			 <div class="accountbox">
+                     			 <?php
+                        			echo"<p>";
+                        				echo"<img src=\"images/no_pic.gif\">";
+                        				echo"<label class=\"label_u\">Hi, ".$_SESSION['username']."</label>";
+                        				echo"<label></label>";
+                        			echo"</p>";
+                        		?>
+                       			 </div>
+                       		 	<ul>
+                        	           <li><input type="submit" id="report" value="Change Shipping Address" /> </li>
+                        	           <form method="post" action="logout.php">
+                       		            <input type="hidden" name="action" value="logout" />
+                       		           <li><input type="submit" value="Sign Out" /></li>
+                        	           </form> 
+                        	           <li><input type="submit" id="report" value="Report" /> </li>
+                        	          <li><input type="submit" class="settings" value="Other Settings" /></li> 
+                        	          </ul>
+                          </div>
+                          </div>
+		</div>
+</header>
